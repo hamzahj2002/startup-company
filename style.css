@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1:#0e04a3;
+    --color2:#3387e7;
+    --color3:#ffc973;
+    --backgron:#2ecfef;
+    --color4:#fef1d1;
+}
+ul{
+    
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    padding: 1%;
+    background-image: linear-gradient(to right, var(--backgron), var(--color4)); 
+    background-attachment: fixed;
+}
+header{
+    height: 100vh;
+
+
+}
+nav{
+padding: 3vh;
+border-bottom: 2px  solid #ffc973;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px;
+}
+nav ul li a {
+    padding: 15px 20px;
+    color: var(--color2);
+    font-weight: 600;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid var(--color1);
+    color: var(--color1);
+}
+header .hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+}
+header .hero .div-home{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 5vh;
+}
+header .hero .div-home h1{
+    font-size: 40px;
+    color: var(--color1);
+
+}
+header .hero .div-home p{
+    margin: 15px;
+    font-size: 25px;
+    color: var(--color3);
+}
+header .article {
+    margin: 5vh;
+    padding: 5vh;
+}
+header .article div{
+    margin: 25px 0;
+}
+header .article div h2{
+    color: var(--color4);
+    font-size: 30px;
+    margin: 10px 0;
+
+}
+header .article div p{
+    color: var(--color2);
+    font-size: 20px;
+
+}
+header .article div p a{
+
+}
