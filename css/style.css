@@ -6,10 +6,10 @@
 }
 :root{
     --color1:#0e04a3;
-    --color2:#3387e7;
+    --color2:#33bde7;
     --color3:#ffc973;
     --backgron:#2ecfef;
-    --color4:#fef1d1;
+    --color4:#f0d692;
 }
 ul{
     
@@ -19,7 +19,10 @@ a{
     text-decoration: none;
 }
 a:visited{
-    color: white;
+    color: var(--color2);
+}
+a:link{
+    color: var(--color2);
 }
 body{
     font-family: "Quicksand", sans-serif;
