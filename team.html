@@ -1,45 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>صفحتي الشخصية</title>
+    <link rel="stylesheet" href="./css/team.css">
 </head>
 <body>
-    <!-- start  table -->
-    <table width="100%" height="400%">
-        <tr>
-            <td>
-                <img src="./images/p.jpg" alt="" width="150px" height="150px">
-                <h2> <mark>Amgad</mark></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.</p>
-
-            </td>
-            <td>
-                <img src="./images/p.jpg" alt="" width="150px" height="150px">
-                <h2> <del>ahmad</del></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.</p>
-
-            </td>
-            <td>
-                <img src="./images/p.jpg" alt="" width="150px" height="150px">
-                <h2> <ins>ahmad</ins></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia.</p>
-
-            </td>
-        </tr>
-    </table>
-    <!-- end table -->
-    <!-- start  blockquote -->
-
-    <h3>الاقتباس</h3>
-    <blockquote cite="https://example.org/einstein">
-        الحقيقة هي وهم، وإن كان ثابتًا جدًا.
-    </blockquote>
-    <hr>
-    <p>it,s <sub>sub</sub></p> 
-    <hr>
-    <p>it,s <sup>sup</sup></p> <hr>
-    <button > <a href="index.html">go to the  home</a></button>
+    <div class="container">
+        <!-- بداية الجدول -->
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/p.jpg" alt="صورة شخصية">
+                    <h2><mark>Amgad</mark></h2>
+                    <p>مطور واجهات مستخدم وتجربة مستخدم محترف، أعمل في مجال البرمجة منذ أكثر من 5 سنوات.</p>
+                </td>
+                <td>
+                    <img src="./images/p.jpg" alt="صورة شخصية">
+                    <h2><del>Ahmad</del></h2>
+                    <p>مصمم جرافيك ومصمم واجهات مستخدم، متخصص في تصميم الشعارات والهويات البصرية.</p>
+                </td>
+                <td>
+                    <img src="./images/p.jpg" alt="صورة شخصية">
+                    <h2><ins>Omar</ins></h2>
+                    <p>مطور تطبيقات الهواتف الذكية، متخصص في تطوير تطبيقات iOS و Android.</p>
+                </td>
+            </tr>
+        </table>
+        <!-- نهاية الجدول -->
+        
+        <!-- بداية الاقتباس -->
+        <div class="quote-section">
+            <h3><i class="fas fa-quote-left"></i> الاقتباس <i class="fas fa-quote-right"></i></h3>
+            <blockquote cite="https://example.org/einstein">
+                الحقيقة هي وهم، وإن كان ثابتًا جدًا.
+                <cite>- ألبرت أينشتاين</cite>
+            </blockquote>
+        </div>
+        
+        <div class="text-effects">
+            <p>it's <sub>sub</sub> text</p>
+            <p>it's <sup>sup</sup> text</p>
+        </div>
+        
+        <a href="index.html" class="btn">
+            الذهاب إلى الصفحة الرئيسية
+        </a>
+    </div>
 </body>
 </html>

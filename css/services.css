@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* أنماط عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+:root{
+    --color1:#10069a;
+    --color2:#33bde7;
+    --color3:#ffc973;
+    --backgron:#09d6ff;
+    --color4:#f7ebcb;
+}
+
+body {
+    background: linear-gradient(135deg, var(--backgron), var(--color4));
+    color: var(--color1);
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--color2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* تنسيق الصورة */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
+thead tr{
+    background-color: var(--color3);
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+}
+
+tbody tr {
+    background-color: var(--color4);
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s;
+}
+
+/* تنسيق القائمة */
+ul {
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.863);
+    overflow: hidden;
+}
+
+li {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color3);
+    transition: background-color 0.3s;
+}
+
+
+li:hover {
+    background-color: var(--color4);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color1), transparent);
+    margin: 5px 0;
+}
+
+/* تنسيق الفيديو */
+video {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.915);
+    max-width: 100%;
+}
+
+/* تنسيق الزر */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, var(--backgron), var(--color4));
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(75, 108, 183, 0.4);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+

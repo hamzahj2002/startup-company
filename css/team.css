@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+:root{
+    --color1:#0e04a3;
+    --color2:#33bde7;
+    --color3:#ffc973;
+    --backgron:#2ecfef;
+    --color4:#fef2d3;
+}
+
+body {
+    background: linear-gradient(135deg, var(--backgron), var(--color4));
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+
+td {
+    padding: 25px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    background: var(--color3);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: var(--color2);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--color1);
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+mark {
+background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+del {
+    text-decoration: none;
+    position: relative;
+}
+
+del::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: var(--color3);
+    transform: rotate(-10deg);
+}
+
+ins {
+    text-decoration: none;
+    border-bottom: 2px dashed #2ed573;
+    padding-bottom: 2px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* تنسيق الاقتباس */
+.quote-section {
+    background-image: linear-gradient(to right, var(--backgron), var(--color4)); 
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.655);
+}
+
+h3 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 22px;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 19px;
+    color: #6d8aff;
+}
+
+/* تنسيق الخطوط */
+.text-effects {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.text-effects p {
+    color: #5a4ae3;
+    background: #f9f9f9;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    min-width: 200px;
+    text-align: center;
+}
+
+sub, sup {
+    font-size: 14px;
+    color: #5a4ae3;
+    font-weight: bold;
+}
+
+
+
+/* تنسيق الزر */
+.btn {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--color1),var(--color2));
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
